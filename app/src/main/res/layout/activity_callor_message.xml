@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CallorMessage">
+
+    <TextView
+        android:id="@+id/abnormal"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="\t\t\t\t\t\tWe detect abnormal walking speed?"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/danger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abnormal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Are you in danger?"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/danger"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="phone call" />
+
+    <Button
+        android:id="@+id/sendlc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="send location" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="46dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/ic_baseline_close_24"
+        app:backgroundTint="#F1EEEE" />
+
+
+</RelativeLayout>

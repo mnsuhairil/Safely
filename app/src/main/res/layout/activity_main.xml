@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sf1"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signin"
+                android:text="Sign In"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#308F5E5E"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:hint="Email"
+                android:padding="20dp"
+                android:text="fitrah@gmail.com"
+                android:textColor="@color/black"
+                android:textColorHint="#4E4747" />
+
+            <EditText
+                android:id="@+id/passwordi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#308F5E5E"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:text="123456"
+                android:textColor="@color/black"
+                android:textColorHint="#4E4747" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#DF243A"
+                android:text="LOGIN" />
+
+            <Button
+                android:id="@+id/logsignup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:text="Sign up"
+                android:backgroundTint="#DF243A"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/others"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:text="Or Sign In with"
+                android:textColor="@color/black" />
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/socialicons"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+    android:orientation="horizontal">
+
+</LinearLayout>
+
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/google_btn"
+                android:src="@drawable/google"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

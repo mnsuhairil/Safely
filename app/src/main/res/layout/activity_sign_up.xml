@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sf1"
+    tools:context=".SignUp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup"
+                android:text="Sign up"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal" />
+
+
+            <EditText
+                android:id="@+id/usernameu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="#308F5E5E"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="20dp"
+                android:hint="Email"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#4E4747" />
+
+            <EditText
+                android:id="@+id/passwordu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#308F5E5E"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#4E4747" />
+
+            <EditText
+                android:id="@+id/cfpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#308F5E5E"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="20dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textColorHint="#4E4747" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signupbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#DF243A"
+                android:text="SIGN UP" />
+
+            <TextView
+                android:id="@+id/loginin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:text=" Already have an account? Login Here"
+                android:textColor="@color/design_default_color_primary_variant" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
